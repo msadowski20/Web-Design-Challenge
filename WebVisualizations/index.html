@@ -8,48 +8,81 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+   
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Latitude Weather Data</a>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="index.html">Latitude Weather Data</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-            </li>
-    
-            <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Plots
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Temperature</a>
-                    <a class="dropdown-item" href="#">Humidity</a>
-                    <a class="dropdown-item" href="#">Cloudiness</a>
-                    <a class="dropdown-item" href="#">Wind Speed</a>
-                </div>
-            </li>
+            <ul class="nav navbar-nav navbar-custom ml-auto">
+                <li class="nav-item active navbar-custom">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only"></span></a>
+                </li>
+        
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="temperature.html">Temperature</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                    </div>
+                </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Comparison<span class="sr-only">(current)</span></a>
-            </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Comparison<span class="sr-only"></span></a>
+                </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Data<span class="sr-only">(current)</span></a>
-            </li>
-        </ul>
-
-      
-    
-    </div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="data.html">Data<span class="sr-only"></span></a>
+                </li>
+            </ul>
+        </div>
     </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg">
+                <div class="header1">Project Summary</div>
+                <hr>
+                <hr>
+                <img src="Resources/assets/images/temp_lat.png"/>
+                <p>
+                    In this project we looked at weather patterns for locations around the world and how they change
+                    as you get closer to the equator.  We pulled weather data for over 500 cities from the OpenWeatherMap API.
+                </p>
+                <p>
+                    We used Python and Matplotlib to perform the anlysis and looked at several weather factors and compared each to
+                    the latitude of the city.  The factors that we analyzed were temperature, humidity, cloudiness and wind speed.
+                    This site is a visualization of all the original data as well as the graphs created as part of the analysis.
+                    You will find a graph of each weather factor vs. latitude and a comparison of all graphs, along with the description
+                    of any correlations or trends that were discovered.
+                </p>
+            </div>
+            <div class="col col-lg-5 col-sm-6">
+                <div class="header2">Visualizations</div>
+            <hr>
+            <hr>
+                <a href="temperature.html"><img src="Resources/assets/images/temp_lat.png" 
+                    alt="Temperature vs. Latitude" height="170" width="220"/></a>
+                <a href="humidity.html"><img src="Resources/assets/images/humid_lat.png"
+                    alt="Humidity vs. Latitude" height="170" width="220"/></a>
+                <a href="cloudiness.html"><img src="Resources/assets/images/cloud_lat.png"
+                    alt="Cloudiness vs. Latitude" height="170" width="220"/></a>
+                <a href="wind_speed.html"><img src="Resources/assets/images/wind_lat.png"
+                    alt="Wind Speed vs. Latitude" height="170" width="220"/></a>
+            </div>
+        </div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

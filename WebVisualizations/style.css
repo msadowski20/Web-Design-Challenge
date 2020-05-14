@@ -1,19 +1,30 @@
-.box {
-  min-height: 50px;
-  padding: 5px;
-  margin: 5px;
-  font-weight: 800;
-  color: #fff;
+.navbar-custom {
+    background-color: rgb(51, 115, 167);
 }
 
-.skyblue {
-  background: deepskyblue;
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: white;
 }
 
-.purple {
-  background: rebeccapurple;
+.navbar-custom a { 
+    color: white; 
+} 
+
+.open,
+.dropdown-menu {
+    background-color: rgb(51, 115, 167);
 }
 
-.red {
-  background: indianred;
+.header1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(51, 115, 167);
+}
+
+.header2 {
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(51, 115, 167);
+    text-align: center;
 }

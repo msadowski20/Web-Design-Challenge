@@ -9,6 +9,7 @@
 
 .navbar-custom a { 
     color: white; 
+    font-size: 22px;
 } 
 
 .open,
@@ -16,15 +17,70 @@
     background-color: rgb(51, 115, 167);
 }
 
-.header1 {
+.header_home1 {
     font-size: 50px;
     font-weight: 500;
     color: rgb(51, 115, 167);
 }
 
-.header2 {
+.header_home2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(51, 115, 167);
+    text-align: center;
+}
+
+.header_sub {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(51, 115, 167);
+    margin-bottom: 25px;
+}
+
+.header_indepth {
     font-size: 50px;
     font-weight: 500;
     color: rgb(51, 115, 167);
     text-align: center;
+}
+
+.figcaption_comp {
+    background-color: rgb(51, 115, 167);
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding-top: 25px;
+}
+
+.figcaption_home {
+    background-color: rgb(51, 115, 167);
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+.figcaption_indepth {
+    background-color: rgb(51, 115, 167);
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }

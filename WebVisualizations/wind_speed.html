@@ -50,6 +50,42 @@
         </div>
     </nav>
 
+    <nav class="navbar navbar-expand-sm navbar-custom">
+        <a class="navbar-brand" href="index.html">Latitude Weather Analysis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <ul class="nav navbar-nav navbar-custom ml-auto">
+            <li class="nav-item active navbar-custom">
+                <a class="nav-link" href="index.html">Home<span class="sr-only"></span></a>
+            </li>
+    
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="temperature.html">Temperature</a>
+                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                </div>
+            </li>
+    
+            <li class="nav-item active">
+                <a class="nav-link" href="comparison.html">Comparison<span class="sr-only"></span></a>
+            </li>
+    
+            <li class="nav-item active">
+                <a class="nav-link" href="data.html">Data<span class="sr-only"></span></a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -73,8 +109,30 @@
             <div class="col-lg-12">
                 <p>
                     This graph looks at the relationship between the wind speed in a city and its proximity
-                    to the equator.
+                    to the equator (latitude 0). It shows that wind speeds are generally greater the farther away from the equator that you get.
                 </p>
+                <p>
+                    We also compared the Northern and Southern Hemispheres and performed a linear regression on the findings.
+                    There does seem to be a pretty strong correlation between wind speed and latitude when you look at the plots. However,
+                    the linear regresion shows a much lower correlation than it appears. There is still a definite correlation in both
+                    hemispheres in that the further you are from the equator the higher the wind speeds are, but the slope of
+                    the regression line is much shallower than I was expecting looking at the plots.
+                </p>
+                <hr>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <figure class="figcaption_regression">
+                    <figcaption>Northern vs. Southern Hemisphere Linear Regression</figcaption>
+                    <img src="Resources/assets/images/nh_lat_wind_regression.png"
+                        alt="Wind Speed vs. Latitude (Northern Hemisphere)" height="300" width="450" />
+                    <img src="Resources/assets/images/sh_lat_wind_regression.png"
+                        alt="Wind Speed vs. Latitude (Southern Hemisphere)" height="300" width="450" />
+                    <figcaption class="figcaption_caption">These graphs show the linear regression of wind speed vs. latitude in both the
+                        Northern and Southern Hemispheres.</figcaption>
+                </figure>
             </div>
         </div>
     </div>

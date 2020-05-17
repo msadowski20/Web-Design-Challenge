@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
-   
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-custom">
-        <a class="navbar-brand" href="index.html">Latitude Weather Analysis</a>
+        <a class="navbar-brand" href="index.html">Latitude Weather Analysis <i class="fas fa-cloud"></i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -50,8 +50,8 @@
         </div>
     </nav>
 
-    <nav class="navbar navbar-expand-sm navbar-custom">
-        <a class="navbar-brand" href="index.html">Latitude Weather Analysis</a>
+    <nav class="navbar navbar-expand-md navbar-custom">
+        <a class="navbar-brand" href="index.html">Latitude Weather Analysis <i class="fas fa-cloud"></i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -86,10 +86,39 @@
         </div>
     </nav>
 
+    <nav class="navbar navbar-expand-sm navbar-custom">
+        <a class="navbar-brand" href="index.html">Latitude Weather Analysis <i class="fas fa-cloud"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <ul class="nav navbar-nav navbar-custom ml-auto">
+    
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Pages
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="index.html">Home</a>
+                    <a class="dropdown-item" href="temperature.html">Temperature</a>
+                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                    <a class="dropdown-item" href="comparison.html">Comparison</a>
+                    <a class="dropdown-item" href="data.html">Data</a>
+                </div>
+            </li>
+    
+        </ul>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="row">
             <div class="col-lg">
-                <div class="header_home1">Project Summary</div>
+                <div class="header_home1">Project Summary <i class="fa fa-bar-chart"></i></div>
                 <hr>
                 <hr>
                 <img class="figcaption_home" src="Resources/assets/images/temp_lat.png" height="400" width="550"/>
@@ -98,7 +127,7 @@
                     as you get closer to the equator. We pulled weather data for over 500 cities from the OpenWeatherMap
                     API.
                 </p>
-                <p>
+                <p class="paragraph">
                     We used Python and Matplotlib to perform the anlysis and looked at several weather factors and compared
                     each to
                     the latitude of the city. The factors that we analyzed were temperature, humidity, cloudiness and wind
@@ -111,7 +140,7 @@
                 </p>
             </div>
             <div class="col col-lg-5">
-                <div class="header_home2">Visualizations</div>
+                <div class="header_home2">Visualizations <i class="fa fa-line-chart"></i></div>
                 <hr>
                 <hr>
                 <div class="row">

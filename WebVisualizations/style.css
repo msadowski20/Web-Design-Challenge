@@ -12,6 +12,14 @@
     font-size: 22px;
 } 
 
+.navbar-expand-md {
+         visibility: hidden;
+}
+
+.navbar-expand-sm {
+         visibility: hidden;
+     }
+
 .open,
 .dropdown-menu {
     background-color: rgb(51, 115, 167);
@@ -21,6 +29,8 @@
     font-size: 50px;
     font-weight: 500;
     color: rgb(51, 115, 167);
+    /* text-decoration: underline; */
+    text-shadow: 2px 2px gray;
 }
 
 .header_home2 {
@@ -43,6 +53,8 @@
     font-weight: 500;
     color: rgb(51, 115, 167);
     text-align: center;
+    /* text-decoration: underline; */
+    /* text-shadow: 2px 2px gray; */
 }
 
 .figcaption_comp {
@@ -51,10 +63,13 @@
     font-size: 25px;
     font-weight: 400;
     padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
     margin-bottom: 50px;
     border-radius: 10px;
     padding-top: 25px;
+    margin-left: 25px;
 }
 
 .figcaption_home {
@@ -116,11 +131,32 @@
     padding-top: 15px;
 }
 
-.navbar-expand-sm {
-    visibility: hidden;
+.paragraph {
+    margin-bottom: 50px;
 }
 
-@media (max-width: 900px) {
+
+@media only screen and (min-width: 501px) and (max-width: 1000px) {
+     .navbar li {
+         visibility: unset;
+     }
+
+     .navbar-expand-md {
+         visibility: visible;
+         padding-top: 0px;
+         margin-top: 0px;
+     }
+
+     .navbar-expand-lg {
+         visibility: hidden;
+     }
+
+     .navbar-expand-sm {
+         visibility: hidden;
+     }
+}
+
+@media only screen and (max-width: 900px) {
      .navbar li {
          visibility: unset;
      }
@@ -132,6 +168,10 @@
      }
 
      .navbar-expand-lg {
+         visibility: hidden;
+     }
+
+     .navbar-expand-md {
          visibility: hidden;
      }
 }

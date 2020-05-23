@@ -1,5 +1,5 @@
 # Web-Design-Challenge
-This is the repository for the Web-Design-Challenge homework assignment.
+This is the repository for the Web Design homework assignment.
 
 All of the files related to the assignment are located in the WebVisualizations folder.
 
